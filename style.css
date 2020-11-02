@@ -35,13 +35,18 @@ header {
   line-height: 70px;
 }
 
+.nav-list-item a {
+  text-decoration: none;
+  color: #fafafa;
+  size: 16px;
+}
+
 .nav-list-item {
   list-style: none;
   display: inline-block;
   margin: 0 30px;
-  size: 16px;
-  color: #fafafa;
 }
+
 /*MV*/
 .main-visual {
   width: 100%;
