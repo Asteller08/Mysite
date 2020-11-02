@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*header*/
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ec715f;
+}
+
+.header-group {
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 子要素の横並び・中央寄せ */
+}
+/*logo*/
+.logo {
+  position: absolute;
+  height: 60px;
+  left: 0px;
+}
+/*ハンバーガー*/
+.menu-box i {
+  font-size: 0px;
+}
+/*navigate*/
+.nav-list {
+  width: 900px;
+  text-align: right;
+  margin: 0 auto;
+  line-height: 70px;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  size: 16px;
+  color: #fafafa;
+}
+/*MV*/
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
+  padding-top: 200px;
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+  text-align: center;
+}
+
+.main-visual-title {
+  color: #fafafa; /* 文字色を白に変更 */
+  font-size: 64px;
+  margin-bottom: 10px;
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+}
+
+.main-visual-text {
+  color: #fafafa; /* 文字色を白に変更 */
+  font-size: 20px;
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+}
+
+.main {
+  width: 100%; /* 横幅いっぱい*/
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+}
+/*全体的に適応*/
+.contents-title {
+  margin: 0 auto;
+  font-size: 32px;
+}
+.contents-line {
+  margin-top: 8px;
+  margin: 0 auto;
+  width: 70px;
+  border-bottom: 3px solid #ec715f;
+}
+
+.contents-text {
+  margin: 30px auto;
+  font-size: 16px;
+}
+
+/*Portfolio*/
+.Portfolio {
+  width: 920px; /* 横幅920px */
+  padding-top: 90px;
+  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+  background-color: #eceff1;
+}
+
+.instagram {
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 要素の横並び・中央寄せ */
+  flex-wrap: wrap;
+}
+
+.instagram-box {
+  width: 300px;
+  height: 250px;
+  padding-top: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.instagram-box:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+}
+
+.instagram-box:nth-child(2) {
+  background-image: url(img/websuku.png);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.instagram-box:nth-child(3) {
+  background-image: url(img/write.jpg);
+}
+
+.instagram-box:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+
+.instagram-box:nth-child(5) {
+  background-image: url(img/talk.jpg);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.instagram-box:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+}
+/*Feature*/
+.Feature {
+  width: 980px; /* 横幅980px */
+  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+}
+.feature-group {
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 子要素の横並び・中央寄せ */
+  margin-top: 20px;
+}
+
+.feature-box {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.feature-box i {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.feature-group-title {
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.feature-group-text {
+  font-size: 16px;
+  color: #000000;
+}
+/*Profile*/
+.Profile {
+  width: 1024px; /* 横幅1024px*/
+  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+  background-color: #eceff1;
+}
+.profile-group {
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 子要素の横並び・中央寄せ */
+  margin-top: 20px;
+}
+.profile-left {
+  width: 512px;
+}
+.profile-pict {
+  background-image: url(img/my-icon.jpg);
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+}
+.profile-right {
+  width: 512px;
+  text-align: left;
+}
+.profile-group-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-group-text {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+/*Contact*/
+.Contact {
+  width: 800px; /* 横幅800px */
+  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+}
+.contact-group {
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 子要素の横並び・中央寄せ */
+  margin-top: 20px;
+}
+
+.contact-left {
+  width: 400px;
+  text-align: left;
+}
+
+.contact-group-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-group-text {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-right {
+  width: 400px;
+  text-align: left;
+}
+
+.contact-right i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+/*footer*/
+footer {
+  width: 100%; /* 横幅いっぱい*/
+  height: 60px; /* 高さ60px*/
+  background-color: #ec715f;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 90px;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #fafafa;
+}
+
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+  }
+  .header-group {
+    width: 90%;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .menu-box i {
+    padding: 5px;
+    font-size: 40px;
+    position: absolute;
+    right: 0px;
+    color: #fafafa;
+  }
+
+  .main-visual {
+    width: 100%;
+    background-image: url(img/code.png);
+    padding-top: 200px;
+  }
+
+  .main-visual-title {
+    width: 90%;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .main-visual-text {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .main {
+    width: 100%; /* 横幅いっぱい*/
+    margin: 0 auto; /* 中央寄せ */
+    text-align: center;
+  }
+
+  .contents-title {
+    width: 90%;
+  }
+
+  .contents-text {
+    width: 90%;
+  }
+
+  .Portfolio {
+    width: 100%; /* 横幅90% */
+    margin: 0 auto;
+  }
+
+  .instagram-box {
+    margin-bottom: 10px;
+  }
+
+  .instagram-box:nth-child(odd) {
+    display: none;
+  }
+
+  .instagram-box:nth-child(even) {
+    margin: 5px auto;
+  }
+
+  .Feature {
+    width: 100%; /* 横幅90% */
+  }
+  .feature-group {
+    display: inline-block; /* Flexboxの利用 */
+    width: 90%;
+  }
+
+  .feature-group-text {
+    margin-bottom: 10px;
+  }
+
+  .Profile {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .profile-group {
+    display: inline-block; /* Flexboxの利用 */
+    margin: 0 auto;
+  }
+  .profile-left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .profile-right {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .profile-group-title {
+    margin-top: 20px;
+  }
+
+  .profile-group-text {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .Contact {
+    width: 90%; /* 横幅90% */
+  }
+
+  .contact-group {
+    display: inline-block;
+  }
+
+  .contact-left {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .contact-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .contact-right i {
+    font-size: 50px;
+    margin-right: 8px;
+  }
+
+  footer {
+    width: 100%; /* 横幅いっぱい*/
+  }
+}
